@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Categorization</title>
+	<style type="text/css">
+		li {
+		    padding: .35rem;
+		}
+		input {
+		    padding: .25rem;
+		    border: none;
+		    border-bottom: 2px solid maroon;
+		    color: maroon;
+		    outline: none;
+		}
+
+		button {
+		    background: maroon;
+		    border: none;
+		    color: #fff;
+		    width: 25px;
+		    height: 25px;
+		    margin: 0 0.1rem;
+		}
+		button.convert {
+			width: auto;
+			height: auto;
+			padding: 1rem;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<ul id="base">
+		<li>
+			<input type="text" name="cat-1" id="cat-1" placeholder="category name">
+			<button class="btn child add">+</button>
+			<button class="btn child delete">-</button>
+		</li>
+		<button class="btn sibling add">+</button>
+	</ul>
+
+	<button class="convert" id="convert">Convert to JSON</button>
+</body>
+<footer>
+	<script type="text/javascript" src="./dist/categorization-min.js"></script>
+</footer>
+</html>
